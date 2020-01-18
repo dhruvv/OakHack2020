@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        emergencyViewButton = findViewById(R.id.EmergencyViewButton);
+        emergencyViewButton = findViewById(R.id.MapsActivityButton);
         emergencyViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            }
-
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);            }
         });
     }
 }
