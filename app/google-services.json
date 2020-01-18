@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "979437202433",
+    "firebase_url": "https://emergencyfireresponder-sooprb.firebaseio.com",
+    "project_id": "emergencyfireresponder-sooprb",
+    "storage_bucket": "emergencyfireresponder-sooprb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979437202433:android:bf2e5d9d9eb9b627612400",
+        "android_client_info": {
+          "package_name": "com.example.oakhack2020final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979437202433-2l3i6ig4bfsckp13qcmfc2uiatn0442f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4cGVEmSXVTMXaHbvGovVN8pfORwhnkog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979437202433-0561u52abh16kmdioocsablkqt8m4shj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
