@@ -9,11 +9,22 @@ import json
 
 while True:
 	print("Waiting for true value from Firebase...")
-	lounge = requests.get("https://emergencyfireresponder-sooprb.firebaseio.com/LoungeRoomHome.json")
-	entrance = requests.get("https://emergencyfirerespnder-sooprb.firebaseio.com/EntranceRoomHome.json")
-	jsonFileL = json.loads(c.text)
-	jsonFileE = json.loads(d.text
-	valL  = jsonFile['Clicked']
+	try:
+		lounge = requests.get("https://emergencyfireresponder-sooprb.firebaseio.com/LoungeRoomHome.json")
+		print("Got lounge value")
+	except:
+		print("Internet connection failiure")
+	try:
+		entrance = requests.get("https://emergencyfireresponder-sooprb.firebaseio.com/EntranceGoogleHome.json")
+		print("Got entrance value")
+	except:
+		print("Internet connection failiure")
+	jsonFileL = json.loads(lounge.text)
+	jsonFileE = json.loads(entrance.text)
+	print(entrance.text)
+	valL = jsonFileL['Clicked']
+	valE = jsonFileE["Clicked"]
+	#valE = 'true'
 	if valL == "true":
 		print("Playing File for Google Home Lounge Room")
 		os.system("castnow --address 192.168.43.185 playfile.mp3")
@@ -23,9 +34,9 @@ while True:
 		print("Succesfully put values")
 	if valE == "true":
 		print("Playing alert for Google Home Entrance Room")
-		os.system("castnow --address playfile.mp3")
+		os.system("castnow --address 192.168.43.169 playfile.mp3")
 		jsonFileE['Clicked'] = 'False'
 		dataDump = json.dumps(jsonFileE)
-		d = requests.put("https://emergencyfireresponder-sooprb.firebaseio.com/EntranceRoomHome.json",dataDump)
+		d = requests.put("https://emergencyfireresponder-sooprb.firebaseio.com/EntranceGoogleHome.json",dataDump)
 		print("Succesfully put values")
 
