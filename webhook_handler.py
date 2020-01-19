@@ -27,7 +27,7 @@ while True:
 	#valE = 'true'
 	if valL == "true":
 		print("Playing File for Google Home Lounge Room")
-		os.system("castnow --address 192.168.43.185 playfile.mp3")
+		os.system("castnow --address 192.168.43.185 playfile2.mp3")
 		jsonFileL['Clicked'] = 'False'
 		dataDump = json.dumps(jsonFileL)
 		d = requests.put("https://emergencyfireresponder-sooprb.firebaseio.com/LoungeRoomHome.json", dataDump)
