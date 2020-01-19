@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">OakHack2020Final</string>
+    <string name="app_name">VictimApp</string>
     <string name="title_activity_maps">Map</string>
-    <string name="title_activity_victim_app_final">Map</string>
 </resources>

@@ -4,7 +4,7 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=84:C3:B1:7C:C0:B4:B8:1B:D8:E0:16:EC:86:29:73:B6:98:B2:54:4B%3Bcom.example.oakhack2020final
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=84:C3:B1:7C:C0:B4:B8:1B:D8:E0:16:EC:86:29:73:B6:98:B2:54:4B%3Bcom.example.victimapp
 
     You can also add your credentials to an existing key, using these values:
 
@@ -20,27 +20,5 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
-    <string name="AIzaSyDu7CKdUhSl55rDFX_2AmBDyCdmVg7FrhQ" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
-    <!--
-    TODO: Before you run your application, you need a Google Maps API key.
-
-    To get one, follow this link, follow the directions and press "Create" at the end:
-
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=84:C3:B1:7C:C0:B4:B8:1B:D8:E0:16:EC:86:29:73:B6:98:B2:54:4B%3Bcom.example.oakhack2020final
-
-    You can also add your credentials to an existing key, using these values:
-
-    Package name:
-    84:C3:B1:7C:C0:B4:B8:1B:D8:E0:16:EC:86:29:73:B6:98:B2:54:4B
-
-    SHA-1 certificate fingerprint:
-    84:C3:B1:7C:C0:B4:B8:1B:D8:E0:16:EC:86:29:73:B6:98:B2:54:4B
-
-    Alternatively, follow the directions here:
-    https://developers.google.com/maps/documentation/android/start#get-key
-
-    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
-    string in this file.
-    -->
-    <string name="google_maps_key" translatable="false">AIzaSyDu7CKdUhSl55rDFX_2AmBDyCdmVg7FrhQ</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_KEY_HERE</string>
 </resources>
