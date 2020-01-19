@@ -8,11 +8,12 @@
 
     <Button
         android:id="@+id/MapsActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="61dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="424dp"
-        android:text="Button"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="624dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="Get Started"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,5 +26,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/firehose" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="37dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/roomba" />
+
+    <TextView
+        android:id="@+id/SYSponder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="308dp"
+        android:text="SYSponder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
